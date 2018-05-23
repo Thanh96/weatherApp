@@ -1,0 +1,14 @@
+<div class="weather_header row">
+  <div class="header_icon">
+    <img [src]="iconUrl" alt="icon weather">
+  </div>
+  <div class="offset-lg-1 col-lg-9 offset-sm-2 col-sm-6 offset-2 col-10 header_day">
+    {{weatherDay.dt | showDay: 'fulldate'}} {{cityName}}
+  </div>
+  <div class="offset-lg-0 col-lg-1 offset-sm-0 col-sm-2 offset-2 col-4">
+    <button type="button" class="btn btn-danger" (click)="onSelectUnits('metric')">C</button>
+  </div>
+  <div class="col-lg-1 col-sm-2 col-4">
+    <button type="button" class="btn btn-secondary" (click)="onSelectUnits('imperial')">F</button>
+  </div>
+</div>

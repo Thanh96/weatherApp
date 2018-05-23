@@ -1,0 +1,114 @@
+@import url(~bootstrap/dist/css/bootstrap.min.css);
+body, html {
+  font-size: 13px; }
+  @media only screen and (min-width: 641px) {
+    body, html {
+      font-size: 20px; } }
+
+img {
+  width: 50px;
+  height: 50px; }
+  @media only screen and (min-width: 641px) {
+    img {
+      width: 70px;
+      height: 70px; } }
+
+ul {
+  padding: 0; }
+
+.container-app-weather {
+  height: 100%;
+  min-height: 100vh;
+  background-image: url("http://thuthuatphanmem.vn/uploads/2017/11/05/hinh-nen-4k-dep-25_124952.jpg");
+  background-size: cover; }
+  .container-app-weather .form-search {
+    text-align: center;
+    padding: 30px 0;
+    font-weight: bold;
+    font-size: 1.3rem; }
+    .container-app-weather .form-search input {
+      cursor: pointer;
+      padding: 0 10px;
+      color: white;
+      border-bottom: 2px solid white;
+      width: 200px;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      outline: none;
+      background-color: transparent; }
+      @media only screen and (min-width: 641px) {
+        .container-app-weather .form-search input {
+          width: 300px; } }
+  .container-app-weather .container-show-weather {
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px; }
+    .container-app-weather .container-show-weather .weather_header {
+      position: relative; }
+      .container-app-weather .container-show-weather .weather_header .header_icon {
+        display: flex;
+        justify-content: center;
+        background-color: green;
+        position: absolute;
+        top: -35px;
+        left: 10px; }
+        @media only screen and (min-width: 641px) {
+          .container-app-weather .container-show-weather .weather_header .header_icon {
+            margin-bottom: 0; } }
+      .container-app-weather .container-show-weather .weather_header .header_day {
+        color: green;
+        font-size: 1.3rem;
+        margin-bottom: 10px; }
+        @media only screen and (min-width: 641px) {
+          .container-app-weather .container-show-weather .weather_header .header_day {
+            margin-bottom: 0; } }
+      .container-app-weather .container-show-weather .weather_header button {
+        width: 100%; }
+    .container-app-weather .container-show-weather .weather_info {
+      margin-top: 50px; }
+      .container-app-weather .container-show-weather .weather_info .detail_header {
+        font-size: 1.5rem; }
+      .container-app-weather .container-show-weather .weather_info ul {
+        font-size: .8rem;
+        margin-top: 10px; }
+        .container-app-weather .container-show-weather .weather_info ul li {
+          margin: 15px 0;
+          list-style: none; }
+          .container-app-weather .container-show-weather .weather_info ul li span {
+            float: right; }
+    .container-app-weather .container-show-weather .weather_list {
+      margin-top: 20px; }
+      .container-app-weather .container-show-weather .weather_list .setBkColor:nth-child(1) .itemColor {
+        background-color: #009933; }
+      .container-app-weather .container-show-weather .weather_list .setBkColor:nth-child(2) .itemColor {
+        background-color: #e6b800; }
+      .container-app-weather .container-show-weather .weather_list .setBkColor:nth-child(3) .itemColor {
+        background-color: #990099; }
+      .container-app-weather .container-show-weather .weather_list .setBkColor:nth-child(4) .itemColor {
+        background-color: #e60000; }
+      .container-app-weather .container-show-weather .weather_list .setBkColor:nth-child(5) .itemColor {
+        background-color: #0040ff; }
+      .container-app-weather .container-show-weather .weather_list .setBkColor:nth-child(6) .itemColor {
+        background-color: #e6005c; }
+      .container-app-weather .container-show-weather .weather_list .weather_item {
+        text-align: center;
+        color: white;
+        padding: 10px 0;
+        margin: 10px 0;
+        font-size: .9rem;
+        cursor: pointer; }
+        .container-app-weather .container-show-weather .weather_list .weather_item .weather_day {
+          font-size: 1.3rem;
+          font-weight: 700; }
+        .container-app-weather .container-show-weather .weather_list .weather_item div {
+          margin: 5px 0; }
+  .container-app-weather .noCity {
+    color: black;
+    font-size: 4rem;
+    font-weight: 700; }
+  .container-app-weather .notData {
+    text-align: center; }
+
+/*# sourceMappingURL=styles.css.map */

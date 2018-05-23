@@ -1,0 +1,27 @@
+<p class="detail_header">
+  <span [ngStyle]="{'color':'red'}">
+     {{ weatherDay.temp.min }}º{{units === 'metric' ? 'C' : 'F'}}
+  </span> ~
+  <span [ngStyle]="{'color':'green'}">
+    {{weatherDay.temp.max}}º{{units === 'metric' ? 'C' : 'F'}}
+  </span>
+  <span [ngStyle]="{'text-transform':'capitalize'}">{{weatherDay.weather[0].description}}</span>
+</p>
+
+<ul>
+  <li>
+    Humidity: <span>{{weatherDay.humidity}}%</span>
+  </li>
+  <li>
+    Wind: <span>{{weatherDay.speed}}m/s</span>
+  </li>
+  <li>
+    Pressure: <span>{{weatherDay.pressure}}hpa</span>
+  </li>
+  <li>
+    Sunrise: <span>{{ detailSun?.sys?.sunrise | showDay: 'time'  : ''}}</span>
+  </li>
+  <li>
+    Sunset: <span>{{ detailSun?.sys?.sunset | showDay: 'time'}}</span>
+  </li>
+</ul>

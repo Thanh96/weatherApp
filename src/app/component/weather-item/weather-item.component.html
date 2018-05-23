@@ -1,0 +1,11 @@
+<div class="weather_item" *ngIf="weatherDay" (click)="selectDay.emit(weatherDay)">
+  <div class="weather_day">{{weatherDay.dt | showDay: 'day'}}</div>
+  <div class="weather_day-detail">{{weatherDay.dt| showDay: 'date'}}</div>
+  <div class="weather_icon">
+    <img [src]="iconUrl">
+  </div>
+  <div class="weather_temp">
+    {{weatherDay.temp.min}}º{{units === 'metric' ? 'C' : 'F'}} ~
+    {{weatherDay.temp.max}}º{{units === 'metric' ? 'C' : 'F'}}
+  </div>
+</div>

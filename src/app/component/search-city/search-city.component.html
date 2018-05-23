@@ -1,0 +1,6 @@
+<form #f="ngForm" (submit)="onSearchCity(f)" class="form-search">
+  <label>
+    <input ngModel name="city" #city="ngModel" autocomplete="off">
+  </label>
+  <button class="btn btn-success">Search</button>
+</form>

@@ -1,0 +1,32 @@
+<div class="container-show-weather">
+  <ng-container *ngIf="!noCity; else showError">
+    <app-weather-header (selectUnits)="onSelectUnits($event)" [weatherDay]="weatherDay" [cityName]="cityName"></app-weather-header>
+    <!--weather header-->
+
+    <div class="weather_info">
+      <div class="row">
+        <div class="col-12 col-lg-5">
+          <app-weather-detail [weatherDay]="weatherDay" [detailSun]="detailSun" [units]="units"></app-weather-detail>
+        </div>
+        <div class="col-12 col-lg-7">
+          <app-weather-chart [weatherDay]="weatherDay"  [weatherChart]="weatherChart"></app-weather-chart>
+        </div>
+      </div>
+    </div>
+    <!--weather info-->
+
+    <div class="weather_list">
+      <app-weather-list (selectDay)="onSelectDay($event)" [units]="units" [weatherWeek]="weatherWeek"></app-weather-list>
+    </div>
+    <!--weather list-->
+  </ng-container>
+  <!--when found city-->
+
+  <ng-template #showError >
+    <p class="text-center noCity">
+      Enter City
+    </p>
+  </ng-template>
+  <!--when not found city-->
+</div>
+

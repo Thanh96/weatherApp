@@ -1,0 +1,7 @@
+<div class="row">
+  <div *ngFor="let weatherDay of weatherWeek.list" class="setBkColor col-xl-2 col-sm-4 col-6">
+    <div class="itemColor">
+      <app-weather-item [units]="units" (selectDay)="selectDay.emit($event)" [weatherDay]="weatherDay"></app-weather-item>
+    </div>
+  </div>
+</div>
