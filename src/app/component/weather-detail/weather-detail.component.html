@@ -13,7 +13,7 @@
     Humidity: <span>{{weatherDay.humidity}}%</span>
   </li>
   <li>
-    Wind: <span>{{weatherDay.speed}}m/s</span>
+    Wind: <span>{{weatherDay.speed}} {{units === 'metric' ? 'm/s' : 'miles/hour'}}</span>
   </li>
   <li>
     Pressure: <span>{{weatherDay.pressure}}hpa</span>
