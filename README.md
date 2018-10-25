@@ -2,7 +2,6 @@
 
 ## Link App
 
-http://ttweatherapp.freevnn.com/
 
 ## Install: 
 
